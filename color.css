@@ -1,0 +1,79 @@
+#html{
+    background-color: rgb(128, 128, 128);
+}
+
+#htmlpomoc1, #htmlpomoc2{
+    background-color: rgb(192, 192, 192);
+}
+
+#text{
+    background-color: rgb(0, 102, 109);
+}
+
+#textpomoc1, #textpomoc2{
+    background-color: rgb(100, 243, 255);
+}
+
+#photos{
+    background-color: rgb(61, 84, 142);
+}
+
+#photospomoc1, #photospomoc2{
+    background-color: rgb(165, 179, 216);
+}
+
+#videos{
+    background-color: rgb(0, 92, 132);
+}
+
+#videospomoc1, #videospomoc2{
+    background-color: rgb(106, 210, 255);
+}
+
+#shapes{
+    background-color: rgb(242, 184, 0);
+}
+
+#shapespomoc1, #shapespomoc2{
+    background-color: rgb(255, 218, 106);
+}
+
+#buttons{
+    background-color: rgb(255, 198, 2);
+}
+
+#buttonspomoc1, #buttonspomoc2{
+    background-color: rgb(255, 226, 125);
+}
+
+#webitems{
+    background-color: rgb(159, 74, 0);
+}
+
+#webitemspomoc1, #webitemspomoc2{
+    background-color: rgb(255, 174, 102);
+}
+
+#business{
+    background-color: rgb(146, 90, 61);
+}
+
+#businesspomoc1, #businesspomoc2{
+    background-color: rgb(210, 169, 147);
+}
+
+#animations{
+    background-color: rgb(206, 24, 5);
+}
+
+#animationspomoc1, #animationspomoc2{
+    background-color: rgb(251, 107, 91);
+}
+
+#jseffects{
+    background-color: rgb(255, 106, 6);
+}
+
+#jseffectspomoc1, #jseffectspomoc2{
+    background-color: rgb(255, 166, 106);
+}
