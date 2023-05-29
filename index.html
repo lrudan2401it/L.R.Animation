@@ -4,44 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/image/ikona.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="color.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <title>L.R. Animations</title>
 </head>
-<body id="home">
-    <header class="hero">
-        <div id="navbar" class="navbar">
+<body>
+    <header id="navbar">
+        <a href="#">
+            <img class="current" src="image/ikonica.png">
             <h1 class="logo">L.R. Animations</h1>
-            <nav>
-                <ul>
-                    <li><a href="#html">HTML elements</a></li>
-                    <li><a href="#text">Texts</a></li>
-                    <li><a href="#photos">Photos</a></li>
-                    <li><a href="#videos">Videos</a></li>
-                    <li><a href="#shapes">Shapes</a></li>
-                    <li><a href="#buttons">Buttons</a></li>
-                    <li><a href="#webitems">Website items</a></li>
-                    <li><a href="#business">Business items</a></li>
-                    <li><a href="#animations">Other animations</a></li>
-                    <li><a href="#jseffects">JS effects</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="content">
-            <p class="pasus">There is a list of animations on this website. 
-                <br>You choose which of these animations you want to be part of your website.</p>
-        </div>
+        </a>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <nav>
+            <ul class="navigation">
+                <li><a class="linkovi" href="#html">HTML elements</a></li>
+                <li><a class="linkovi" href="#text">Text</a></li>
+                <li><a class="linkovi" href="#photos">Photos</a></li>
+                <li><a class="linkovi" href="#videos">Videos</a></li>
+                <li><a class="linkovi" href="#shapes">Shapes</a></li>
+                <li><a class="linkovi" href="#buttons">Buttons</a></li>
+                <li><a class="linkovi" href="#webitems">Website items</a></li>
+                <li><a class="linkovi" href="#business">Business items</a></li>
+                <li><a class="linkovi" href="#nature">nature</a></li>
+                <li><a class="linkovi" href="#food">food</a></li>
+                <li><a class="linkovi" href="#holiday">holiday</a></li>
+            </ul>
+        </nav>
     </header>
+    <div class="hero">
+        <div class="content">
+            <div class="about about2">
+                <div class="aboutext">
+                    <b>
+                    There is a list of animations on this website.<br>
+                    [scroll down, and see animations]<br><br>
+                    You choose which of these animations you want to be part of your website.<br>
+                    [send me serial numbers of animations, <br> for example: 1b, 2f, 5a, 6c,...]
+                    </b>
+                </div>
+            </div>
+            <!--
+            <div class="pasus pasus1a"><div class="slova1a">There is a list of animations on this website.</div></div>
+            <div class="pasus pasus1b"><div class="slova1b"><span class="malaslova">[scroll down, and see animations]</div></span></div>
+            <div class="pasus pasus2a"><div class="slova2a">You choose which of these animations you want to be part of your website.</div></div>
+            <div class="pasus pasus2b"><div class="slova2b"><span class="malaslova">[send me serial numbers of animations, <br> for example: 1b, 2f, 5a, 6c,...]</span></div></div>
+            -->
+        </div>
+        <div class="banner">
+            <div class="clouds">
+                <img src="image/cloud1.png" style="--i:1;">
+                <img src="image/cloud2.png" style="--i:2;">
+                <img src="image/cloud3.png" style="--i:3;">
+                <img src="image/cloud4.png" style="--i:4;">
+                <img src="image/cloud5.png" style="--i:5;">
+            </div>
+        </div>
+    </div>
+
+    <div class="about about1">
+        <div class="aboutext">
+            <b>
+                There is a list of animations on this website.<br>
+                [scroll down, and see animations]<br><br>
+                You choose which of these animations you want to be part of your website.<br>
+                [send me serial numbers of animations, <br> for example: 1b, 2f, 5a, 6c,...]
+            </b>
+        </div>
+    </div>
 
     <div id="html" class="div2">
         <h3>0) HTML elements</h3>
-        <div class="divpomoc">
-            <div id="htmlpomoc1" class="malidiv">
-                <p>Pure sticky table header</p>
-                <h6>0.a</h6>
-                <img src="materials/table.png">
+        <div class="divpomoc2">
+            <div id="htmlpomoc1" class="grid malidiv">
+                <p class="item">Pure sticky table header</p>
+                <h6 class="item">0.a</h6>
+                <img class="item" src="materials/table.png">
             </div>
-            <div id="htmlpomoc2" class="malidiv">
+            <div id="htmlpomoc2" class="grid malidiv">
                 <p>List style</p>
                 <h6>0.b</h6>
                 <img src="materials/list.png">
@@ -49,181 +92,312 @@
         </div>
     </div>
 
-    <div id="text" class="div2">
-        <h3>1) Texts</h3>
-        <div class="divpomoc">
-            <div id="textpomoc1" class="malidiv">
+    <div id="text" class="div5">
+        <h3>1) Text</h3>
+        <div class="divpomoc5">
+            <div id="textpomoc1" class="grid malidiv">
                 <p>Creative menu hover text animation effects</p>
                 <h6>1.a</h6>
                 <video src="materials/text menu hover.mp4" autoplay muted loop>
             </div>
-            <div id="textpomoc2" class="malidiv">
+            <div id="textpomoc2" class="grid malidiv">
                 <p>Transparent text effect</p>
                 <h6>1.b</h6>
                 <img src="materials/text transparent.png">
             </div>
+
+            <div id="textpomoc2" class="grid malidiv">
+                <p>Creative Isometric Box (3D)</p>
+                <h6>1.c</h6>
+                <img src="materials/1.c- Creative isometric box (3D).png">
+            </div>
+            <div id="textpomoc2" class="grid malidiv">
+                <p>Wavy Div Animation Effect</p>
+                <h6>1.d</h6>
+                <img src="materials/1.d- Wavy Div Animation Effect.gif">
+            </div>
+            <div id="textpomoc2" class="grid malidiv">
+                <p>Wrap Text Around Circle</p>
+                <h6>1.e</h6>
+                <img src="materials/1.e- Wrap Text Around Cirlce.png">
+            </div>
         </div>
     </div>
 
-    <div id="photos" class="div6">
-        <h3>2) Photos</h3>
-        <div class="divpomoc6">
-            <div id="photospomoc1" class="malidiv">
+    <div id="photos" class="div7">
+        <h3>2) Images</h3>
+        <div class="divpomoc7">
+            <div id="photospomoc1" class="grid malidiv">
                 <p>Postage stamp cutout effects</p>
                 <h6>2.a</h6>
                 <img src="materials/razglednica.png">
             </div>
-            <div id="photospomoc1" class="malidiv">
+            <div id="photospomoc1" class="grid malidiv">
                 <p>Text portrait effect</p>
                 <h6>2.b</h6>
                 <img src="materials/text portrait.png">
             </div>
-            <div id="photospomoc1" class="malidiv">
+            <div id="photospomoc1" class="grid malidiv">
                 <p>3D Image flip effect</p>
                 <h6>2.c</h6>
                 <video src="materials/chrome_plccM5Bl6G.mp4" autoplay muted loop>
             </div>
-            <div id="photospomoc1" class="malidiv">
-                <p>Christmas tree</p>
-                <h6>2.d</h6>
-                <video src="materials/chrome_ECyphi1CKy.mp4" autoplay muted loop>
-            </div>
-            <div id="photospomoc1" class="malidiv">
+            <div id="photospomoc1" class="grid malidiv">
                 <p>Image hover overlay effect</p>
-                <h6>2.e</h6>
+                <h6>2.d</h6>
                 <video src="materials/chrome_VWxZk32wKg.mp4" autoplay muted loop>
             </div>
-            <div id="photospomoc1" class="malidiv">
-                <p>Pure JavaScript scratch effect</p>
+
+            <div id="photospomoc1" class="grid malidiv">
+                <p>Card Hover Effect</p>
+                <h6>2.e</h6>
+                <video src="materials/2.e- chrome_2IffqbV6Ih.mp4" autoplay muted loop>
+            </div>
+            <div id="photospomoc1" class="grid malidiv">
+                <p>Image Slider - manual navigation buttons</p>
                 <h6>2.f</h6>
-                <video src="materials/chrome_pDogYiBRqC.mp4" autoplay muted loop>
+                <video src="materials/2.f- chrome_p6d0xrs2bN.mp4" autoplay muted loop>
+            </div>
+            <div id="photospomoc1" class="grid malidiv">
+                <p>Realistic Images Shadow</p>
+                <h6>2.g</h6>
+                <img src="materials/2.g- Realistic Image Shadow.png">
             </div>
         </div>
     </div>
 
-    <div id="videos" class="div2">
+    <div id="videos" class="div3">
         <h3>3) Videos</h3>
-        <div class="divpomoc">
-            <div id="videospomoc1" class="malidiv">
+        <div class="divpomoc3">
+            <div id="videospomoc1" class="grid malidiv">
                 <p>Place video inside silhouette</p>
                 <h6>3.a</h6>
                 <video src="materials/chrome_s3nhyqqVty.mp4" autoplay muted loop>
             </div>
-            <div id="videospomoc2" class="malidiv">
+            <div id="videospomoc2" class="grid malidiv">
                 <p>Place video inside text</p>
                 <h6>3.b</h6>
                 <video src="materials/chrome_jMedR4LAPZ.mp4" autoplay muted loop>
             </div>
+            <div id="videospomoc2" class="grid malidiv">
+                <p>Video cube - 3D</p>
+                <h6>3.c</h6>
+                <video src="materials/3.c- chrome_YYbX3B9sfn.mp4" autoplay muted loop>
+            </div>
         </div>
     </div>
 
-    <div id="shapes" class="div2">
+    <div id="shapes" class="div4">
         <h3>4) Shapes</h3>
-        <div class="divpomoc">
-            <div id="shapespomoc1" class="malidiv">
+        <div class="divpomoc4">
+            <div id="shapespomoc1" class="grid malidiv">
                 <p>Light effect</p>
                 <h6>4.a</h6>
                 <video src="materials/chrome_qnO5t5EO5m.mp4" autoplay muted loop>
             </div>
-            <div id="shapespomoc2" class="malidiv">
+            <div id="shapespomoc2" class="grid malidiv">
                 <p>Balance animation effect</p>
                 <h6>4.b</h6>
                 <video src="materials/chrome_xlgHo7i6WV.mp4" autoplay muted loop>
             </div>
+
+            <div id="shapespomoc1" class="grid malidiv">
+                <p>Clarity Glass Animation Effect</p>
+                <h6>4.c</h6>
+                <video src="materials/4.c- chrome_1q2n80sVGV.mp4" autoplay muted loop>
+            </div>
+            <div id="shapespomoc2" class="grid malidiv">
+                <p>Pyramid - Ambient Light Effect</p>
+                <h6>4.d</h6>
+                <video src="materials/4.d- chrome_0Cvdfw127g.mp4" autoplay muted loop>
+            </div>
         </div>
     </div>
 
-    <div id="buttons" class="div2">
+    <div id="buttons" class="div5">
         <h3>5) Buttons</h3>
-        <div class="divpomoc">
-            <div id="buttonspomoc1" class="malidiv">
+        <div class="divpomoc5">
+            <div id="buttonspomoc1" class="grid malidiv">
                 <p>Custom checkbox UI design</p>
                 <h6>5.a</h6>
                 <img src="materials/checkbox.png">
             </div>
-            <div id="buttonspomoc2" class="malidiv">
+            <div id="buttonspomoc2" class="grid malidiv">
                 <p>Pixel button hover animation effect</p>
                 <h6>5.b</h6>
                 <video src="materials/chrome_4R4JY7w89W.mp4" autoplay muted loop>
             </div>
+
+            <div id="buttonspomoc1" class="grid malidiv">
+                <p>Custom Checkbox Design - caffe button</p>
+                <h6>5.c</h6>
+                <video src="materials/5.c- chrome_QfCNVzVRQ6.mp4" autoplay muted loop>
+            </div>
+            <div id="buttonspomoc2" class="grid malidiv">
+                <p>Neon Light Button</p>
+                <h6>5.d</h6>
+                <video src="materials/5.d- chrome_l72TSEySEE.mp4" autoplay muted loop>
+            </div>
+            <div id="buttonspomoc2" class="grid malidiv">
+                <p>Drive Line Around Button</p>
+                <h6>5.e</h6>
+                <video src="materials/5.e- chrome_w3VQ732d7D.mp4" autoplay muted loop>
+            </div>
         </div>
     </div>
 
-    <div id="webitems" class="div4">
+    <div id="webitems" class="div5">
         <h3>6) Website items</h3>
-        <div class="divpomoc4">
-            <div id="webitemspomoc1" class="malidiv">
+        <div class="divpomoc5">
+            <div id="webitemspomoc1" class="grid malidiv">
                 <p>Magic line icon - Social media buttons</p>
                 <h6>6.a</h6>
                 <video src="materials/chrome_rgu0R90j5R.mp4" autoplay muted loop>
             </div>
-            <div id="webitemspomoc2" class="malidiv">
+            <div id="webitemspomoc2" class="grid malidiv">
                 <p>Animation effect - loading</p>
                 <h6>6.b</h6>
                 <video src="materials/chrome_QQEgK6NR4K.mp4" autoplay muted loop>
             </div>
-            <div id="webitemspomoc1" class="malidiv">
+            <div id="webitemspomoc1" class="grid malidiv">
                 <p>Glassmorphism business card design</p>
                 <h6>6.c</h6>
                 <video src="materials/chrome_8yGZKw999A.mp4" autoplay muted loop>
             </div>
-            <div id="webitemspomoc2" class="malidiv">
-                <p>Charcter running animation effect</p>
+
+            <div id="webitemspomoc2" class="grid malidiv">
+                <p>Animated Hour Glass</p>
                 <h6>6.d</h6>
-                <video src="materials/chrome_3inou8F6sN.mp4" autoplay muted loop>
+                <video src="materials/6.d- chrome_7wqYPMp0Et.mp4" autoplay muted loop>
+            </div>
+            <div id="webitemspomoc1" class="grid malidiv">
+                <p>Clickable SVG Map</p>
+                <h6>6.e</h6>
+                <img src="materials/6.e- Clickable Map SVG.png">
             </div>
         </div>
     </div>
 
-    <div id="business" class="div3">
+    <div id="business" class="div5">
         <h3>7) Business items</h3>
-        <div class="divpomoc3">
-            <div id="businesspomoc1" class="malidiv">
-                <p>Responsive card hover effect</p>
+        <div class="divpomoc5">
+            <div id="businesspomoc1" class="grid malidiv">
+                <p>Glassmorphism list hover effect</p>
                 <h6>7.a</h6>
                 <video src="materials/chrome_6ghAQqbuYE.mp4" autoplay muted loop>
             </div>
-            <div id="businesspomoc2" class="malidiv">
-                <p>Glassmorphism list hover effect</p>
+            <div id="businesspomoc2" class="grid malidiv">
+                <p>Responsive card hover effect</p>
                 <h6>7.b</h6>
                 <video src="materials/chrome_s3h5SbRU4i.mp4" autoplay muted loop>
             </div>
-            <div id="businesspomoc2" class="malidiv">
+            <div id="businesspomoc2" class="grid malidiv">
                 <p>3D flip product e-commerce card hover effect</p>
                 <h6>7.c</h6>
                 <video src="materials/chrome_X1ThlLPk9S.mp4" autoplay muted loop>
             </div>
+
+            <div id="businesspomoc2" class="grid malidiv">
+                <p>Glowing Gradient Cards</p>
+                <h6>7.d</h6>
+                <video src="materials/7.d- chrome_hFMhb9BpMs.mp4" autoplay muted loop>
+            </div>
+            <div id="businesspomoc2" class="grid malidiv">
+                <p>Simple Product e-commerce card</p>
+                <h6>7.e</h6>
+                <video src="materials/7.e- chrome_20PXo8MUg0.mp4" autoplay muted loop>
+            </div>
         </div>
     </div>
 
-    <div id="animations" class="div2">
-        <h3>8) Other animations</h3>
-        <div class="divpomoc">
-            <div id="animationspomoc1" class="malidiv">
-                <p>Animated Cigarette</p>
+    <div id="nature" class="div4">
+        <h3>8) nature (thematic animations) </h3>
+        <div class="divpomoc4">
+            <div id="naturepomoc1" class="grid malidiv">
+                <p>css art - CACTUS</p>
                 <h6>8.a</h6>
-                <video src="materials/chrome_vvL2ivUYwt.mp4" autoplay muted loop>
+                <video src="materials/8.a- chrome_r0xPQpeHoV.mp4" autoplay muted loop>
             </div>
-            <div id="animationspomoc2" class="malidiv">
+
+            <div id="naturepomoc2" class="grid malidiv">
                 <p>Leaves animation effect - AUTUMN</p>
                 <h6>8.b</h6>
                 <video src="materials/chrome_IDntfK5OXJ.mp4" autoplay muted loop>
             </div>
+
+            <div id="naturepomoc1" class="grid malidiv">
+                <p>Animation movie - Animals walk</p>
+                <h6>8.c</h6>
+                <video src="materials/8.c- chrome_SfUvhfAmJf.mp4" autoplay muted loop>
+            </div>
+            <div id="naturepomoc2" class="grid malidiv">
+                <p>Fish Bowl animatio effect</p>
+                <h6>8.d</h6>
+                <video src="materials/8.d- chrome_IIhnqFRrIn.mp4" autoplay muted loop>
+            </div>
         </div>
     </div>
 
-    <div id="jseffects" class="div2 zadnja">
-        <h3>9) JS effects</h3>
-        <div class="divpomoc">
-            <div id="jseffectspomoc1" class="malidiv">
-                <p>Chart JS Integration</p>
+    <div id="food" class="div4">
+        <h3>9) food (thematic animations)</h3>
+        <div class="divpomoc4">
+            <div id="foodpomoc2" class="grid malidiv">
+                <p>Animated CIGARETTE</p>
                 <h6>9.a</h6>
-                <img src="materials/chart.png">
+                <video src="materials/chrome_vvL2ivUYwt.mp4" autoplay muted loop>
             </div>
-            <div id="jseffectspomoc2" class="malidiv">
-                <p>Colorful rain animation effect</p>
+
+            <div id="foodpomoc2" class="grid malidiv">
+                <p>Christmas tree</p>
                 <h6>9.b</h6>
-                <video src="materials/chrome_joCfJDPju8.mp4" autoplay muted loop>
+                <video src="materials/9.b- chrome_JZcWPS8Dst.mp4" autoplay muted loop>
+            </div>
+            <div id="foodpomoc2" class="grid malidiv">
+                <p>Fill glass with water</p>
+                <h6>9.c</h6>
+                <video src="materials/9.c- chrome_8yoKDloKIn.mp4" autoplay muted loop>
+            </div>
+            <div id="foodpomoc2" class="grid malidiv">
+                <p>Hot cup of tea</p>
+                <h6>9.d</h6>
+                <video src="materials/9.d- chrome_lzvTof3E8D.mp4" autoplay muted loop>
+            </div>
+        </div>
+    </div>
+
+    <div id="holiday" class="div6 zadnja">
+        <h3>10) holiday (thematic animations)</h3>
+        <div class="divpomoc6">
+            <div id="holidaypomoc2" class="grid malidiv">
+                <p>Christmas tree</p>
+                <h6>10.a</h6>
+                <video src="materials/chrome_ECyphi1CKy.mp4" autoplay muted loop>
+            </div>
+
+            <div id="holidaypomoc2" class="grid malidiv">
+                <p>Animated Halloween Banner</p>
+                <h6>10.b</h6>
+                <video src="materials/10.b- chrome_E9SqGpoAHy.mp4" autoplay muted loop>
+            </div>
+            <div id="holidaypomoc2" class="grid malidiv">
+                <p>Christmas Lights animation effect</p>
+                <h6>10.c</h6>
+                <video src="materials/10.c- chrome_RrBXNpLjBf.mp4" autoplay muted loop>
+            </div>
+            <div id="holidaypomoc2" class="grid malidiv">
+                <p>Easter Egg animation</p>
+                <h6>10.d</h6>
+                <video src="materials/10.d- chrome_wbsmELLW8L.mp4" autoplay muted loop>
+            </div>
+            <div id="holidaypomoc2" class="grid malidiv">
+                <p>Santa Animation</p>
+                <h6>10.e</h6>
+                <video src="materials/10.e- chrome_6L2Yofzwbk.mp4" autoplay muted loop>
+            </div>
+            <div id="holidaypomoc2" class="grid malidiv">
+                <p>Text animation - HAPPY NEW YEAR</p>
+                <h6>10.f</h6>
+                <video src="materials/10.f- chrome_OyRP4ZlJw6.mp4" autoplay muted loop>
             </div>
         </div>
     </div>
@@ -235,5 +409,16 @@
             <br> Powered by: <a href="https://www.linkedin.com/in/luka-rudan-17848520b/">Luka Rudan</a>
         </p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
