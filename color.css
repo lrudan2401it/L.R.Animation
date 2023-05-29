@@ -1,5 +1,9 @@
 #html{
     background-color: rgb(128, 128, 128);
+    /*background-color: rgba(192,192,192,1);
+    opacity: 1;
+    background-image: radial-gradient(circle at center center, rgba(128,128,128,0.8), rgba(192,192,192,1)), repeating-radial-gradient(circle at center center, rgba(128,128,128,0.8), rgba(128,128,128,0.8), 22px, transparent 44px, transparent 22px);
+    background-blend-mode: multiply;*/
 }
 
 #htmlpomoc1, #htmlpomoc2{
@@ -62,18 +66,26 @@
     background-color: rgb(210, 169, 147);
 }
 
-#animations{
+#nature{
     background-color: rgb(206, 24, 5);
 }
 
-#animationspomoc1, #animationspomoc2{
+#naturepomoc1, #naturepomoc2{
     background-color: rgb(251, 107, 91);
 }
 
-#jseffects{
+#food{
     background-color: rgb(255, 106, 6);
 }
 
-#jseffectspomoc1, #jseffectspomoc2{
+#foodpomoc1, #foodpomoc2{
     background-color: rgb(255, 166, 106);
+}
+
+#holiday{
+    background-color: rgb(228, 71, 23);
+}
+
+#holidaypomoc1, #holidaypomoc2{
+    background-color: rgba(255, 146, 106, 0.937);
 }
